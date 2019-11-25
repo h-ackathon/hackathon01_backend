@@ -11,6 +11,9 @@ const StatSchema = new Schema({
     wickets_taken: Number,
     balls_bowled: Number,
     runs_given: Number,
+    sixes: Number,
+    fours: Number,
+    extras: Number,
 });
 
 module.exports = mongoose.model('stats', StatSchema);
