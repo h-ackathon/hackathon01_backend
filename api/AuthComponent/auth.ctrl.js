@@ -32,7 +32,7 @@ exports.register = async (req, res, next) => {
         let addedResponse = {};
         let response = await authRegister(req.body);
         console.log("reg resp-->", response);
-        if (response._id) {
+        if (response) {
             addedResponse.user = response;
             addedResponse.token = createAuthToken(response._id);
             console.log("added", addedResponse);
