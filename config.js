@@ -2,7 +2,7 @@ module.exports =
 {
     "dev": {
         env: 'dev',
-        port: process.env.PORT || 8008,
+        port: process.env.PORT || 3000,
         appName: 'vibrant',
         secret: 'devontherocks',
         dbString: 'mongodb://127.0.0.1:27017/db',
