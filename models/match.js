@@ -5,8 +5,8 @@ const MatchSchema = new Schema({
     title: String,
     start_date_time: String,
     end_date_time: String,
-    teams: [{type: Schema.Types.ObjectId, ref: 'teams'}],
-    league: {type: Schema.Types.ObjectId, ref: 'leagues'}
+    teams: [{type: String, ref: 'teams'}],
+    league: {type: String, ref: 'leagues'}
 });
 
 module.exports = mongoose.model('matches', MatchSchema);
