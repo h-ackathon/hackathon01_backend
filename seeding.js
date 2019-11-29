@@ -44,3 +44,16 @@ seeder.import(collectionsPlayers)
 .catch(function(err){
     console.log(err);
 });
+
+const collectionsMatches = seeder.readCollectionsFromPath(path.resolve("./seeder-data/match-seeding"),
+{
+  transformers: [Seeder.Transformers.replaceDocumentIdWithUnderscoreId],
+});
+console.log("Collections-->>", collectionsMatches);
+seeder.import(collectionsMatches)
+.then(function(){
+    console.log("Seeder success Match");
+})
+.catch(function(err){
+    console.log(err);
+});
