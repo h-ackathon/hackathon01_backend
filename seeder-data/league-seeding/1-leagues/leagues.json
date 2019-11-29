@@ -1,0 +1,14 @@
+[
+    {
+        "name": "IPL",
+        "key": "ipl-123"
+    },
+    {
+        "name": "INTERNATIONAL",
+        "key": "int-123"
+    },
+    {
+        "name": "PSL",
+        "key": "psl-123"
+    }
+]

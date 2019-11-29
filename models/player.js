@@ -10,7 +10,7 @@ const PlayerSchema = new Schema({
     is_captain: {type: Boolean, default: false},
     is_vice_captain: {type: Boolean, default: false},
     is_wicket_keeper: {type: Boolean, default: false},
-    teams: [{type: Schema.Types.ObjectId, ref: 'teams'}]
+    teams: [{type: String, ref: 'teams'}]
 });
 
 module.exports = mongoose.model('players', PlayerSchema);

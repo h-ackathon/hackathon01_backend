@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Lahore Qalandars",
+        "key": "lq123",
+        "league": "psl-123"
+    },
+    {
+        "name": "Peshawar Zalmi",
+        "key": "pz123",
+        "league": "psl-123"
+    },
+    {
+        "name": "Quetta Gladiators",
+        "key": "qg123",
+        "league": "psl-123"
+    },
+    {
+        "name": "Islamabad United",
+        "key": "isl123",
+        "league": "psl-123"
+    },
+    {
+        "name": "Pakistan",
+        "key": "pak123",
+        "league": "int-123"
+    },
+    {
+        "name": "Australia",
+        "key": "aus123",
+        "league": "int-123"
+    },
+    {
+        "name": "West Indies",
+        "key": "wi123",
+        "league": "int-123"
+    },
+    {
+        "name": "England",
+        "key": "eng123",
+        "league": "int-123"
+    },
+    {
+        "name": "Mumbai Indians",
+        "key": "mi123",
+        "league": "ipl-123"
+    },
+    {
+        "name": "Chinnai Super Kings",
+        "key": "csk123",
+        "league": "ipl-123"
+    },
+    {
+        "name": "Kokatta Knight Riders",
+        "key": "kkr123",
+        "league": "ipl-123"
+    }
+]
