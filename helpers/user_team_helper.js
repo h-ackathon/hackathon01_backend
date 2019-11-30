@@ -1,7 +1,6 @@
 const UserTeamModel = require('../models/userteam');
 
 exports.createUserTeam = async (param) => {
-    debugger;    
     try {
         return UserTeamModel.create(param);
     }
