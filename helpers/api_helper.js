@@ -61,4 +61,7 @@ exports.failure404 = (res, err) => {
 exports.failure401 = (res, err) => {
     res.status(401).send({ error: err, auth: false, message: 'Authentication failed!', status: 401 });
 };
+exports.failure422 = (res, err) => {
+    res.status(200).send({ err: err, auth: false, message: 'Unprocessable Entity!', status: 422 });
+};
 

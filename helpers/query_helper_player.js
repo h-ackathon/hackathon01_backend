@@ -1,5 +1,5 @@
-const PlayerModel = require('../models/player');
-const TeamModel = require('../models/team');
+const PlayerModel = model('player');
+const TeamModel = model('team');
 
 exports.getPlayers = async (league) => {
 
