@@ -5,9 +5,9 @@ exports.getPlayers = async (league) => {
 
     try {
         return await TeamModel.aggregate([
-            { 
+            {
                 $match: {
-                    league: league 
+                    league: league
                 }
             },
             {
@@ -18,15 +18,31 @@ exports.getPlayers = async (league) => {
                     as: 'player'
                 }
             },
+            // {
+            //     $addFields: {
+            //         teamName: 'team'
+            //     }
+            // },
+            // {
+            //     $project: {
+            //         player: 1,
+            //         _id: 0,
+            //         teamName: 1
+            //     }
+            // },
+            {
+                $unwind: '$player',
+            },
+            {
+                $unwind: '$name',
+            },
             {
                 $project: {
                     player: 1,
-                    _id: 0
+                    _id: 0,
+                    name: 1
                 }
             },
-            {
-                $unwind: '$player'
-            }
         ]);
     }
     catch (err) {
