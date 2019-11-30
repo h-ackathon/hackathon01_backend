@@ -1,4 +1,4 @@
-const UserModel = require('../models/user');
+const UserModel = model('user');
 
 exports.authLogin = async (email) => {
     try {

@@ -1,4 +1,4 @@
-const LeagueModel = require('../models/league');
+const LeagueModel = model('league');
 
 exports.getAllLeagues = async (email) => {
     try {
