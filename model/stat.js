@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const StatSchema = new Schema({
+    league: {type: Schema.Types.ObjectId, ref: 'leagues'},
     match: {type: Schema.Types.ObjectId, ref: 'matches'},
     player: {type: Schema.Types.ObjectId, ref: 'players'},
     catches: Number,
