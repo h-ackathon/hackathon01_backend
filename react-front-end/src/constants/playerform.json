@@ -1,0 +1,42 @@
+[
+    {
+      "title": "Catches",
+      "key": "catches"
+    },
+    {
+      "title": "Run outs",
+      "key": "run_outs"
+    },
+    {
+      "title": "Runs scored",
+      "key": "runs_scored"
+    },
+    {
+      "title": "Balls Played",
+      "key": "balls_played"
+    },
+    {
+      "title": "Wickets taken",
+      "key": "wickets_taken"
+    },
+    {
+      "title": "Balls bowled",
+      "key": "balls_bowled"
+    },
+    {
+      "title": "Runs given",
+      "key": "runs_given"
+    },
+    {
+      "title": "Sixes",
+      "key": "sixes"
+    },
+    {
+      "title": "Fours",
+      "key": "fours"
+    },
+    {
+      "title": "Extras",
+      "key": "extras"
+    }
+  ]

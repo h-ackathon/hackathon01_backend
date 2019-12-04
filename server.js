@@ -10,6 +10,7 @@ const exphbs  = require('express-handlebars');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const cors = require('cors');
 
 const fs = require('fs');
 const mongoose = require('mongoose');
@@ -28,6 +29,13 @@ const dbInit = require(path.join(__dirname, 'dbConnection'))(config);
 
 const port = config.port;
 const router = express.Router();
+
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 
 app.use(cookieParser());
 

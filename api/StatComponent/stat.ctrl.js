@@ -5,9 +5,7 @@ const mongoose = require('mongoose');
 exports.saveStat = async (req, res, next) => {
     try {
         let {league, match, player} = req.body;
-        if (!league) failure422(res, {error: "Invalid Data" });
-        if (!match) failure422(res, {error: "Invalid Data" });
-        if (!player) failure422(res, {error: "Invalid Data" });
+        if (!league || !match || !player) failure422(res, {error: "Invalid Data" });
         league = mongoose.Types.ObjectId(league);
         match = mongoose.Types.ObjectId(match);
         player = mongoose.Types.ObjectId(player);
