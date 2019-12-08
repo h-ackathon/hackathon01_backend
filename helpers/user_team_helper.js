@@ -1,4 +1,4 @@
-const UserTeamModel = require('../models/userteam');
+const UserTeamModel = model('userteam');
 
 exports.createUserTeam = async (param) => {
     try {

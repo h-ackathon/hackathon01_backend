@@ -1,4 +1,4 @@
-const MatchModel = require('../models/match');
+const MatchModel = model('match');
 
 exports.getMatches = async (league) => {
     try {
