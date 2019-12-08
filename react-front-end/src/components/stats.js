@@ -71,9 +71,9 @@ class Stats extends PureComponent {
                         }
 
                         <button onClick={() => this.props.saveStat(
-                            catches, run_outs, runs_scored,
-                            balls_played, wickets_taken,
-                            balls_bowled, runs_given, sixes, fours, extras)}
+                            this.props.league, this.props.match, this.props.player, 
+                            this.props.player_stats
+                        )}
                             type="submit" className="btn btn-primary border-0">Submit</button>
 
                     </div>
@@ -85,14 +85,12 @@ class Stats extends PureComponent {
 
 const mapState = function ({ stats }) {
     const { leagues, matches, players, league, match, player,
-        save_stat_loading, save_stat_error, league_matches_and_players_loading,
-        league_matches_and_players_error, leagues_loading, leagues_error,
+        loading, error,
         error_message, player_stats } = stats;
 
     return {
         leagues, matches, players, league, match, player,
-        save_stat_loading, save_stat_error, league_matches_and_players_loading,
-        league_matches_and_players_error, leagues_loading, leagues_error,
+        loading, error,
         error_message, player_stats
     };
 };

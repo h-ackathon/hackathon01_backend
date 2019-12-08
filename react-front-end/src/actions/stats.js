@@ -1,32 +1,48 @@
 import {
-    FETCH_ALL_LEAGUES, FETCH_ALL_LEAGUES_LOADING, FETCH_ALL_LEAGUES_ERROR,
+    FETCH_ALL_LEAGUES, 
     SET_MATCH, SET_PLAYER, SET_STAT,
-    SAVE_STAT_LOADING, SAVE_STAT_FAILURE,
-    SET_LEAGUE_MATCHES_AND_PLAYERS_LOADING, SET_LEAGUE_MATCHES_AND_PLAYERS_ERROR,
+    LOADING_START, LOADING_END,
     SET_LEAGUE_MATCHES_AND_PLAYERS,
 } from './types';
 import Axios from 'axios';
 import { API_URL } from '../constants';
 
 export function saveStat() {
+    console.log("argss", 
+    {
+        league: arguments[0],
+        match: arguments[1],
+        player: arguments[2],
+        ...arguments[3]
+    }
+    );
     return function (dispatch) {
         dispatch({
-            type: SAVE_STAT_LOADING,
+            type: LOADING_START,
             payload: true
         });
-        Axios.post(`${API_URL}savestat`)
+        Axios.post(`${API_URL}savestat`, {
+            league: arguments[0],
+            match: arguments[1],
+            player: arguments[2],
+            ...arguments[3]
+        })
             .then(function (resp) {
-                if (resp.data.status === 200)
+                if (resp.data.status === 200) {
                     dispatch({
-                        type: SAVE_STAT_LOADING,
+                        type: LOADING_END,
                         payload: false
                     });
+                }
                 else throw `ERROR CODE -->> ${resp.data.status}`;
             })
             .catch(function (err) {
                 dispatch({
-                    type: SAVE_STAT_FAILURE,
-                    payload: err
+                    type: LOADING_END,
+                    payload: {
+                        error: true,
+                        error_message: err
+                    }
                 });
             });
     };
@@ -35,53 +51,71 @@ export function saveStat() {
 export function fetchAllLeagues() {
     return function (dispatch) {
         dispatch({
-            type: FETCH_ALL_LEAGUES_LOADING,
+            type: LOADING_START,
             payload: true
         });
         Axios.get(`${API_URL}allLeagues`)
             .then(function (resp) {
-                if (resp.data.status === 200)
+                if (resp.data.status === 200) {
                     dispatch({
                         type: FETCH_ALL_LEAGUES,
                         payload: resp.data.response
                     });
+                    dispatch({
+                        type: LOADING_END,
+                        payload: false
+                    });
+                }
                 else throw `ERROR CODE -->> ${resp.data.status}`;
             })
             .catch(function (err) {
                 dispatch({
-                    type: FETCH_ALL_LEAGUES_ERROR,
-                    payload: err
+                    type: LOADING_END,
+                    payload: {
+                        error: true,
+                        error_message: err
+                    }
                 });
             });
     };
 };
 
-export function onLeagueChange(event) {
+export function onLeagueChange({target}) {
     return function (dispatch) {
         dispatch({
-            type: SET_LEAGUE_MATCHES_AND_PLAYERS_LOADING,
-            payload: event.target.value
+            type: LOADING_START,
+            payload: true
         });
         Promise.all(
             [
-                Axios.get(`${API_URL}leaguematches?league=${event.target.value}`),
-                Axios.get(`${API_URL}leagueplayers?league=${event.target.value}`)
+                Axios.get(`${API_URL}leaguematches?league=${target.value}`),
+                Axios.get(`${API_URL}leagueplayers?league=${target.value}`)
             ]
         )
             .then(function (resp) {
-                console.log("l", resp);
-                const l = resp.map(function (r) {
+                const r = resp.map(function (r) {
                     return r.data.status === 200 ? r.data.response : [];
                 });
                 dispatch({
                     type: SET_LEAGUE_MATCHES_AND_PLAYERS,
-                    payload: l
+                    payload: {
+                        league: target.value,
+                        matches: r[0],
+                        players: r[1] 
+                    }
+                });
+                dispatch({
+                    type: LOADING_END,
+                    payload: true
                 });
             })
             .catch(function (err) {
                 dispatch({
-                    type: SET_LEAGUE_MATCHES_AND_PLAYERS_ERROR,
-                    payload: err
+                    type: LOADING_END,
+                    payload: {
+                        error: true,
+                        error_message: err
+                    }
                 });
             });
     };
