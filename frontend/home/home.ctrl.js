@@ -1,12 +1,16 @@
 const { dateFormat, checkEquality, getFirstCharIfNoImage } = require('../../helpers/app_helper');
 const { checkTokenValidity } = require('../../helpers/api_helper');
+const {getAllLeagues} = require('../../helpers/league_helper');
 
 exports.index = async (req, res) => {
-    console.log("homepage", req.cookies.token, checkTokenValidity(req.cookies.token));
+
+    const d = await getAllLeagues();
+    
     let dataHash = {
-        data: null,
+        data: d,
         name: req.cookies.name,
-        isLoggedIn: req.cookies.token && req.cookies.token !== 'undefined' && checkTokenValidity(req.cookies.token),
+        isLoggedIn: req.cookies.token && req.cookies.token !== 'undefined' 
+        && checkTokenValidity(req.cookies.token),
         helpers: {
             dateFormat: dateFormat,
             checkEquality: checkEquality,

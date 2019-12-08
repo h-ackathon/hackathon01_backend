@@ -41,7 +41,7 @@
       
       postData('http://localhost:8008/api/register', myForm)
       .then(data => loginRegisterCallback(data, 'reg')) // JSON-string from `response.json()` call
-      .catch(error => console.error(error));
+      .catch(error => alert(error));
     
     };
 

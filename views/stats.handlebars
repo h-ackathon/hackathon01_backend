@@ -1,0 +1,106 @@
+{{> header}}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-8 col-xs-12 offset-md-3 offset-sm-2 mt-3">
+      <div class="alert alert-danger d-none" role="alert">
+  
+      </div>
+      <h2 class="mb-3">Player Stats</h2>
+      <form onsubmit="saveStats(event)">
+
+        <div class="form-group">
+            <label for="match">Select Match</label>
+            <select id="match" onchange="onChange(event)">
+                <option selected="selected">None selected</option>
+                {{#each matches}}
+                    <option>{{this.title}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="player">Select Player</label>
+            <select id="player" onchange="onChange(event)">
+                <option selected="selected">None selected</option>
+                {{#each players}}
+                    <option>{{this.player.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div class="form-group">
+          <label for="catches">Catches</label>
+          <input type="number" name="catches" class="form-control" id="catches" 
+          aria-describedby="catchesHelp" placeholder="Catches" 
+          onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="run-outs">Run outs</label>
+          <input type="number" name="run-outs" class="form-control" 
+          id="run-outs" aria-describedby="run-outsHelp" placeholder="Run outs" 
+          onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="runs_scored">Runs scored</label>
+          <input type="number" name="runs_scored" class="form-control" 
+          id="runs_scored" placeholder="Runs scored" onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="balls_played">Balls played</label>
+          <input type="number" name="balls_played" class="form-control" 
+          id="balls_played" placeholder="Balls Played" onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="wickets_taken">Wickets taken</label>
+          <input type="number" name="wickets_taken" class="form-control" 
+          id="wickets_taken" placeholder="Wickets taken" onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="balls_bowled">Balls bowled</label>
+          <input type="number" name="balls_bowled" class="form-control" 
+          id="balls_bowled" placeholder="Balls bowled" onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="runs_given">Runs given</label>
+          <input type="number" name="runs_given" class="form-control" 
+          id="runs_given" placeholder="Runs given" onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="sixes">Sixes</label>
+          <input type="number" name="sixes" class="form-control" 
+          id="sixes" placeholder="Sixes" onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="fours">Fours</label>
+          <input type="number" name="fours" class="form-control" 
+          id="fours" placeholder="Fours" onchange="onChange(event)">
+        </div>
+
+        <div class="form-group">
+          <label for="extras">Extras</label>
+          <input type="number" name="extras" class="form-control" 
+          id="extras" placeholder="Extras" onchange="onChange(event)">
+        </div>
+
+        <button type="submit" class="btn btn-primary border-0">Submit</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  var stats = {}; 
+  function onChange(e) { stats[e.target.id] = e.target.value; };
+  function saveStats(e) {
+    
+  };
+</script>
