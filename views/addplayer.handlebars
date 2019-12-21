@@ -1,0 +1,48 @@
+{{> header}}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-8 col-xs-12 offset-md-3 offset-sm-2 mt-3">
+      <div class="alert alert-danger d-none" role="alert">
+
+      </div>
+      <h2 class="mb-3">Add Player</h2>
+      <form onsubmit="addPlayer(event)">
+        <div class="form-group">
+          <label for="league">Select League</label>
+          <select id="league" onchange="onChange(event)">
+            <option selected="selected">None selected</option>
+            {{#each leagues}}
+            <option>{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary border-0">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<Script>
+  'user strict';
+  var playerForm = {
+    league: '',
+    name: '',
+    team: '',
+    is_batsman: false,
+    is_bowler: false,
+    is_captain: false,
+    is_vice_captain: false,
+    is_wicket_keeper: false,
+    is_all_rounder: false
+  }
+
+  function addPlayer(e) {
+    e.preventDefault();
+    console.log(e);
+  }
+
+  function onChange(e) {
+    playerForm[e.target.id] = e.target.value;
+  };
+</Script>

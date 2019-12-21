@@ -13,15 +13,15 @@ exports.login = async (req, res, next) => {
                 addedResponse.token = createAuthToken(response._id);
                 next(addedResponse);
             } else {
-                failure401(res, {});
+                failure401(res);
             };
         }
         else {
-            failure404(res, {});
+            failure404(res);
         };
     }
     catch (err) {
-        failure500(res, err);
+        failure500(res);
     };
 };
 

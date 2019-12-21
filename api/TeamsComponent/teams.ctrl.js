@@ -1,4 +1,6 @@
 const TeamsModel = model('team');
+const { failure401, failure404, failure500, failure422 } = require('../../helpers/api_helper');
+const { addTeam } = require('../../helpers/query_helper_team');
 
 exports.getTestRankings = (req, res, next) => {
   data = [
@@ -64,4 +66,20 @@ exports.getAllTeams = (req, res, next) => {
     }
     res.json([{status:1, message:'Access Granted', teams:teams}]);
   });
+}
+
+exports.addTeam = async (req, res, next) => {
+  try {
+    let response = await addTeam(req.body.team);
+    if (response) {
+      next(response);
+    }
+    else {
+      failure404(res, {});
+    };
+  }
+  catch (err) {
+    console.log(err);
+    failure500(res, err);
+  }
 }
