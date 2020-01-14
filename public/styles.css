@@ -1,260 +1,257 @@
-body {
-    background-color: #f7f7f7;
-}
-small {
-    font-size: 70%;
-    color: rgba(0,0,0,0.3);
-}
-.container {
-    max-width: 1600px;
-}
-.full-width { width: 100%; }
-.home-block {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-}
-.home-block h5 {
-    margin-bottom: 5px;
-    display: inline-block;
-}
-.job-detail-inner-content {
-    padding: 15px 10px;
-}
-.job-detail-inner-content h3 {
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000;
-}
-.titles {
-    padding-left: 10px;
-}
-.titles a {
-    display: block;
-    font-size: 0.75rem;
-    color: rgba(0,0,0,0.75);
-    line-height: 1.3rem;
-    margin: 0px;
-}
-.titles a:first-child {
-    font-weight: bold;
-}
-.tags {
-    max-width: 75%;
-}
-.tags a {
-    padding: 1px 10px;
-    border-radius: 18px;
-    text-transform: uppercase;
-    font-size: 0.6em;
-    font-weight: bold;
-    line-height: 17px;
-    margin-right: 2px;
-    background: rgba(0,0,0,0.1);
-}
-.tags a:hover {
-    text-decoration: none;
-    background-color: #000;
-    color: #fff;
-}
-.half-width-flex {
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-.tags-date-block {
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-}
-.profile-image {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 3em;
-    height: 3em;
-    background-color: #d3d3d3;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: gray;
-}
-.main-nav {
-    z-index: 9;
-    margin: 0 auto;
-    background: #d3d3d3;
-}
-.main-nav .top-menu {
-    padding: 10px;
-}
-.main-nav #logo {
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.main-nav #logo a {
-    position: relative;
-    color: #fff;
-}
-/* .main-nav ul {
-    padding: 0;
-    margin: 0;
-}
-.main-nav li {
-    padding: 8px 0;
-    margin: 0 0 0 10px;
-    list-style: none;
-    display: inline;
-    font-weight: 400;
-    border: 1px solid #a2dc4d;
-    border-radius: 5px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-.main-nav ul li:hover > a {
-    color: #fff;
-    text-decoration: none;
-}
-.main-nav ul li:hover {
-    background-color: #a2dc4d;
-}
-.main-nav ul li.active > a {
-    color: #fff !important;
-    background-color: #a2dc4d;
-    position: relative;
-}
-.main-nav ul li a {
-    position: relative;
-    font-size: 15px;
-    padding: 20px 12px;
-    color: #a2dc4d;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-} */
-/* .btn-cta {
-    color: #333;
-    background: #a2dc4d;
-    padding: 0.6em 1.2em;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    border: none;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+/* landing page */
+
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #FFF;
+  color: #555;}
+
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;}
+
+img
+{ border: 0;}
+
+h1, h2, h3, h4, h5, h6 
+{ color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;}
+
+h1, h2, h3
+{ font: normal 170% 'century gothic', arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #000;}
+
+h2
+{ font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #009FBC;}
+
+h3
+{ font-size: 140%;
+  padding: 5px 0 0 0;}
+
+h4, h6
+{ color: #009FBC;
+  padding: 0 0 5px 0;
+  font: normal 110% arial;
+  text-transform: uppercase;}
+
+h5, h6
+{ color: #888;
+  font: normal 95% arial;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;}
+
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #00C6F0;}
+
+a:hover
+{ text-decoration: none;}
+
+blockquote
+{ margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;}
+
+ul
+{ margin: 2px 0 22px 17px;}
+
+ul li
+{ list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+.left
+{ float: left;
+  width: auto;
+  margin-right: 10px;}
+
+.right
+{ float: right; 
+  width: auto;
+  margin-left: 10px;}
+
+.center
+{ display: block;
+  text-align: center;
+  margin: 20px auto;}
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#header
+{ background: #CCC;
+  border-bottom: 1px solid #CCC;
+  height: 186px;}
+  
+#banner
+{  background: transparent url(banner.jpg) no-repeat;
+  width: 860px;
+  height: 180px;
+  margin-bottom: 20px;
+  border: 10px solid #DDD;}
+
+#logo
+{ width: 880px;
+  position: relative;
+  height: 140px;
+  background: #F5F5F5;}
+
+#logo #logo_text 
+{ position: absolute; 
+  top: 10px;
+  left: 0;}
+
+#logo h1, #logo h2
+{ font: normal 300% 'century gothic', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0 0 0 9px;}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+{ padding: 22px 0 0 0;
+  color: #323232;
+  letter-spacing: 0.1em;
+  text-decoration: none;}
+
+#logo_text h1 a .logo_colour
+{ color: #00C6F0;}
+
+#logo_text a:hover .logo_colour
+{ color: #DDD;}
+
+#logo_text h2
+{ font-size: 120%;
+  padding: 4px 0 0 0;
+  color: #999;}
+
+#menubar
+{ width: 872px;
+  height: 45px;
+  padding-right: 8px;
+  background: #DDD;
+  border-top: 1px solid #CCC;} 
+
+ul#menu
+{ float: right;
+  margin: 0;}
+
+ul#menu li
+{ float: left;
+  padding: 0 0 0 9px;
+  list-style: none;
+  margin: 8px 4px 0 4px;}
+
+ul#menu li a
+{ font: normal 100% 'trebuchet ms', sans-serif;
+  display: block; 
+  float: left; 
+  height: 20px;
+  padding: 6px 20px 5px 20px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  background: #BBB;} 
+
+ul#menu li.selected a
+{ height: 20px;
+  padding: 6px 20px 5px 11px;}
+
+ul#menu li.selected
+{ margin: 8px 4px 0 13px;
+  background: #00C6F0;}
+
+ul#menu li.selected a, ul#menu li.selected a:hover
+{ background: #00C6F0;
+  color: #FFF;}
+
+ul#menu li a:hover
+{ color: #323232;}
+
+#site_content
+{ width: 880px;
+  min-height: 500px;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  padding: 0 0 10px 0;} 
+
+#footer
+{ width: 100%;
+  font-family: 'trebuchet ms', sans-serif;
+  font-size: 100%;
+  height: 80px;
+  padding: 28px 0 5px 0;
+  text-align: center; 
+  background: #CCC;
+  border-top: 1px solid #AAA;
+  color: #FFF;}
+
+#footer p
+{ line-height: 1.7em;
+  padding: 0 0 10px 0;}
+
+#footer a
+{ color: #FFF;
+  text-decoration: none;}
+
+#footer a:hover
+{ color: #00C6F0;
+  text-decoration: none;}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
     cursor: pointer;
-    vertical-align: top;
-    font-size: 14px;
-}
-.btn-cta:focus {
-    outline: none;
-}
-.btn-cta:hover {
-    -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-    -ms-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-    -o-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-} */
-/* a:hover, a:active, a:focus {
-    color: #a2dc4d;
-    outline: none;
-    text-decoration: none;
-} */
-.search-input {
-    font-size: 14px;
-    width: 400px;
-    border-color: rgba(0,0,0,0.1);
-    color: #fff;
-    padding: 0.6em 1.2em;
-    outline: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
+    padding: 18px;
+    width: 100%;
     text-align: left;
-    vertical-align: top;
-    border-radius: 5px;
-}
-/* .btn-primary.btn-outline {
-    background: transparent;
-    color: #a2dc4d;
-}
-.btn.btn-md {
-    padding: 0.6em;
-}
-.btn-outline {
-    background: none;
-    border: 2px solid gray;
-    font-size: 16px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.btn-primary {
-    background: #a2dc4d;
-    color: #fff;
-}
-.btn {
-    margin-right: 4px;
-    margin-bottom: 4px;
-    font-size: 14px;
-    font-weight: 400;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    padding: 8px 20px;
-}
-.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-    background: #a2dc4d;
-    color: #fff;
-} */
-.postjob-list ul li {
-    margin-top: 10px;
-}
-.postjob-list ul li span {
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
     float: right;
-    color: #007bff;
-    cursor: pointer;
-}
-.postjob-list ul li span:hover {
-    color: #0027ff;
-}
-.select2-container .select2-selection__rendered {
-    padding: 5px 10px!important;
-}
-.select2-container .select2-selection {
-    border: 1px solid #ced4da!important;
-}
-.select2-container .select2-selection--single {
-    height: auto!important;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: auto!important;
-    top: 50%!important;
-    right: 5px!important;
-}
-.half-width {
-    width: 50%;
-}
-.pl-20 {
-    padding-left: 20px;
-}
-.p-10 {
-    padding: 10px;
-}
-.red { color: red; }
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }

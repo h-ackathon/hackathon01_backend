@@ -1,0 +1,100 @@
+[
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "3",
+        "vn": "St George's Park, Port Elizabeth",
+        "dt": "1/16/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "Zimbabwe",
+        "t2": "Sri Lanka",
+        "mn": "1",
+        "vn": "Harare Sports Club, Harare",
+        "dt": "1/19/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "4",
+        "vn": "New Wanderers Stadium, Johannesburg",
+        "dt": "1/24/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "Zimbabwe",
+        "t2": "Sri Lanka",
+        "mn": "2",
+        "vn": "Harare Sports Club, Harare",
+        "dt": "1/27/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "1",
+        "vn": "Basin Reserve, Wellington",
+        "dt": "2/20/2020 10:30 PM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "2",
+        "vn": "Hagley Oval, Christchurch",
+        "dt": "2/28/2020 10:30 PM UTC"
+    },
+    {
+        "t1": "Sri Lanka",
+        "t2": "England",
+        "mn": "1",
+        "vn": "Galle International Stadium, Galle",
+        "dt": "3/19/2020 4:30 AM UTC"
+    },
+    {
+        "t1": "Sri Lanka",
+        "t2": "England",
+        "mn": "2",
+        "vn": "R Premadasa Stadium, Colombo",
+        "dt": "3/27/2020 4:30 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "West Indies",
+        "mn": "1",
+        "vn": "The Oval, London",
+        "dt": "5/4/2020 10:00 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "West Indies",
+        "mn": "2",
+        "vn": "Edgbaston, Birmingham",
+        "dt": "5/12/2020 10:00 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "West Indies",
+        "mn": "3",
+        "vn": "Lord's Cricket Ground, London",
+        "dt": "5/25/2020 10:00 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Pakistan",
+        "mn": "1",
+        "vn": "Lord's Cricket Ground, London",
+        "dt": "7/30/2020 10:00 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Pakistan",
+        "mn": "2",
+        "vn": "Old Trafford, Manchester",
+        "dt": "8/7/2020 10:00 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Pakistan",
+        "mn": "3",
+        "vn": "Trent Bridge, Nottingham",
+        "dt": "8/20/2020 10:00 AM UTC"
+    }
+]
