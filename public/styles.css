@@ -34,9 +34,11 @@ ul li
 
 #logo
 { width: 880px;
-  position: relative;
-  height: 140px;
-  background: #F5F5F5;}
+    position: relative;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    background: #F5F5F5;}
 
 #logo img {
     width: 170px;
@@ -93,7 +95,7 @@ ul#menu li a:hover
 { width: 880px;
   min-height: 500px;
   overflow: hidden;
-  margin: 20px auto 0 auto;
+  margin: 40px auto 0 auto;
   padding: 0 0 10px 0;} 
 
 #footer
@@ -137,3 +139,26 @@ ul#menu li a:hover
     text-align: center;
 }
 h2 { margin-bottom: 10px; }
+.login-links {     margin: 15px;
+    height: 45px;
+    /* padding: 10px; */
+    border: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: center;
+    background: rgba(0,0,0,0.1);
+    border-radius: 45px; }
+.login-links a { text-decoration: none;
+    font-size: 20px;
+    color: #333; }
+
+.login-outer {
+    display: flex;
+    margin: 0 auto;
+    max-width: 767px;
+    margin-top: 90px;
+}
+.r-section {
+    width: 50%;
+}
