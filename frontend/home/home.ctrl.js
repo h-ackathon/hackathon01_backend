@@ -1,4 +1,4 @@
-const { dateFormat, checkEquality, getFirstCharIfNoImage, getMatchTitle } = require('../../helpers/app_helper');
+const { dateFormat, checkEquality, getFirstCharIfNoImage, getMatchTitle, getMatchTitleWithDashes } = require('../../helpers/app_helper');
 const { checkTokenValidity } = require('../../helpers/api_helper');
 const {getAllLeagues} = require('../../helpers/league_helper');
 const t20 = require('../../matches_data/t20i');
@@ -18,7 +18,8 @@ exports.index = async (req, res) => {
             dateFormat: dateFormat,
             checkEquality: checkEquality,
             getFirstCharIfNoImage: getFirstCharIfNoImage,
-            getMatchTitle: getMatchTitle
+            getMatchTitle: getMatchTitle,
+            getMatchTitleWithDashes: getMatchTitleWithDashes
         }
     };
     res.render('home', dataHash);

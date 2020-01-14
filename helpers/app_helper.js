@@ -27,6 +27,28 @@ exports.getMatchTitle = function(hash, type) {
     str += ` ${type}, ${hash.t1} v ${hash.t2} in ${hash.vn} at ${getDate(hash.dt)}`
     return str
 }
+exports.getMatchTitleWithDashes = function(hash, type) {
+    let str = ''
+    switch (hash.mn) {
+        case '1':
+            str = '1st';
+            break;
+        case '2':
+            str = '2nd';
+            break;
+        case '3':
+            str = '3rd';
+            break;
+        case 'Only':
+            str = 'Only';
+            break;
+        default:
+            str = `${hash.mn}th`;
+            break;
+    }
+    str += ` ${type}, ${hash.t1} v ${hash.t2} in ${hash.vn} at ${getDate(hash.dt)}`
+    return str.replace(/, /g, '_').replace(/ /g, '-')
+}
 function getDate(d) {
     return new Date(d)
 }
