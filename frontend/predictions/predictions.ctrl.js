@@ -5,7 +5,35 @@ const t20 = require('../../matches_data/t20i');
 const odi = require('../../matches_data/odi');
 const test = require('../../matches_data/test');
 
-exports.index = async (req, res) => {
+exports.matchT20 = function (req, res) {
+    requestHandler(req, res, 't20', 'match');
+};
+exports.overT20 = function (req, res) {
+    requestHandler(req, res, 't20', 'over');
+};
+exports.ballT20 = function (req, res) {
+    requestHandler(req, res, 't20', 'ball');
+};
+exports.matchOdi = function (req, res) {
+    requestHandler(req, res, 'odi', 'match');
+};
+exports.overOdi = function (req, res) {
+    requestHandler(req, res, 'odi', 'over');
+};
+exports.ballOdi = function (req, res) {
+    requestHandler(req, res, 'odi', 'ball');
+};
+exports.matchTest = function (req, res) {
+    requestHandler(req, res, 'test', 'match');
+};
+exports.overTest = function (req, res) {
+    requestHandler(req, res, 'test', 'over');
+};
+exports.ballTest = function (req, res) {
+    requestHandler(req, res, 'test', 'ball');
+};
+
+function requestHandler (req, res, matchType, predictionType) {
 
     // const d = await getAllLeagues();
 
@@ -45,5 +73,5 @@ exports.index = async (req, res) => {
             getMatchTitleWithDashes: getMatchTitleWithDashes
         }
     }
-    res.render('home', dataHash);
+    res.render('predictions', dataHash);
 };
