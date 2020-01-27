@@ -1,9 +1,10 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const mongoose = require('mongoose')
+const {Schema} = mongoose
 
-const LeagueSchema = new Schema({
-    name: String,
-    key: String
-});
+const ls = new Schema({
+    n: {type: String, required: [true, 'League name is required']},
+    i: String,
+    s: {type: Schema.Types.ObjectId, ref: 'sports'}
+})
 
-module.exports = mongoose.model('leagues', LeagueSchema);
+module.exports = mongoose.model('leagues', ls)
