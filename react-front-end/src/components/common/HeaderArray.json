@@ -1,0 +1,30 @@
+[
+    {
+        "link": "/",
+        "title": "Home"
+    },
+    {
+        "link": "/players",
+        "title": "Players"
+    },
+    {
+        "link": "/player-stats",
+        "title": "Player stats"
+    },
+    {
+        "link": "/teams",
+        "title": "Teams"
+    },
+    {
+        "link": "/matches",
+        "title": "Matches"
+    },
+    {
+        "link": "/leagues",
+        "title": "Leagues"
+    },
+    {
+        "link": "/news",
+        "title": "News"
+    }
+]

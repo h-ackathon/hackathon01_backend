@@ -52,16 +52,16 @@ exports.saveSession = (data, req, res, next) => {
 exports.success = (response, req, res, next) => {
     res.status(200).send({ auth: true, response: response, message: 'Success', status: 200 });
 };
-exports.failure500 = (res, err) => {
-    res.status(500).send({ error: err, auth: false, message: 'Something went wrong!', status: 500 });
+exports.failure500 = (res, err="") => {
+    res.status(200).send({ error: err, auth: false, message: 'Something went wrong!', status: 500 });
 };
-exports.failure404 = (res, err) => {
-    res.status(404).send({ error: err, auth: false, message: 'Not found!', status: 404 });
+exports.failure404 = (res, err="") => {
+    res.status(200).send({ error: err, auth: false, message: 'Not found!', status: 404 });
 };
-exports.failure401 = (res, err) => {
-    res.status(401).send({ error: err, auth: false, message: 'Authentication failed!', status: 401 });
+exports.failure401 = (res, err="") => {
+    res.status(200).send({ error: err, auth: false, message: 'Authentication failed!', status: 401 });
 };
-exports.failure422 = (res, err) => {
+exports.failure422 = (res, err="") => {
     res.status(200).send({ err: err, auth: false, message: 'Unprocessable Entity!', status: 422 });
 };
 

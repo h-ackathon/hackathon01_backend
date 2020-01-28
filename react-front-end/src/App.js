@@ -4,12 +4,13 @@ import ReduxThunk from 'redux-thunk';
 import reducers from './reducers';
 import React from 'react';
 import './App.css';
-import Stats from './components/stats';
+import Router from './components/Router';
 
 function App() {
   return (
     <Provider store={createStore(reducers, {}, applyMiddleware(ReduxThunk))}>
-      <Stats />
+
+      <Router />
     </Provider>
   );
 }
