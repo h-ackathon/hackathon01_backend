@@ -1,0 +1,212 @@
+[
+    {
+        "t1": "West Indies",
+        "t2": "Ireland",
+        "mn": "1",
+        "vn": "National Cricket Stadium, St George's",
+        "dt": "1/15/2020 5:00 PM UTC"
+    },
+    {
+        "t1": "West Indies",
+        "t2": "Ireland",
+        "mn": "2",
+        "vn": "Warner Park, Basseterre",
+        "dt": "1/18/2020 10:00 PM UTC"
+    },
+    {
+        "t1": "West Indies",
+        "t2": "Ireland",
+        "mn": "3",
+        "vn": "Warner Park, Basseterre",
+        "dt": "1/19/2020 10:00 PM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "1",
+        "vn": "Eden Park, Auckland",
+        "dt": "1/24/2020 7:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "2",
+        "vn": "Eden Park, Auckland",
+        "dt": "1/26/2020 7:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "3",
+        "vn": "Seddon Park, Hamilton",
+        "dt": "1/29/2020 7:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "4",
+        "vn": "Westpac Stadium, Wellington",
+        "dt": "1/31/2020 7:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "5",
+        "vn": "Bay Oval, Tauranga",
+        "dt": "2/2/2020 7:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "1",
+        "vn": "Buffalo Park, East London",
+        "dt": "2/12/2020 4:00 PM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "2",
+        "vn": "Kingsmead, Durban",
+        "dt": "2/14/2020 4:00 PM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "3",
+        "vn": "Supersport Park, Centurion",
+        "dt": "2/16/2020 12:30 PM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "Australia",
+        "mn": "1",
+        "vn": "New Wanderers Stadium, Johannesburg",
+        "dt": "2/21/2020 4:00 PM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "Australia",
+        "mn": "2",
+        "vn": "St George's Park, Port Elizabeth",
+        "dt": "2/23/2020 12:30 PM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "Australia",
+        "mn": "3",
+        "vn": "Newlands, Cape Town",
+        "dt": "2/26/2020 4:00 PM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "Australia",
+        "mn": "1",
+        "vn": "University Oval, Dunedin",
+        "dt": "3/24/2020 1:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "Australia",
+        "mn": "2",
+        "vn": "Eden Park, Auckland",
+        "dt": "3/27/2020 6:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "Australia",
+        "mn": "3",
+        "vn": "Hagley Oval, Christchurch",
+        "dt": "3/29/2020 1:00 AM UTC"
+    },
+    {
+        "t1": "Scotland",
+        "t2": "New Zealand",
+        "mn": "Only",
+        "vn": "The Grange, Edinburgh",
+        "dt": "6/10/2020 2:00 PM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "New Zealand",
+        "mn": "1",
+        "vn": "Bready, Derry",
+        "dt": "6/19/2020 2:00 PM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "New Zealand",
+        "mn": "2",
+        "vn": "Bready, Derry",
+        "dt": "6/21/2020 2:00 PM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "New Zealand",
+        "mn": "3",
+        "vn": "Bready, Derry",
+        "dt": "6/23/2020 2:00 PM UTC"
+    },
+    {
+        "t1": "Scotland",
+        "t2": "Australia",
+        "mn": "Only",
+        "vn": "The Grange, Edinburgh",
+        "dt": "6/29/2020 2:00 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Australia",
+        "mn": "1",
+        "vn": "Emirates Riverside, Chester-le-Street",
+        "dt": "7/3/2020 5:30 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Australia",
+        "mn": "2",
+        "vn": "Old Trafford, Manchester",
+        "dt": "7/5/2020 4:00 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Australia",
+        "mn": "3",
+        "vn": "Headingley, Leeds",
+        "dt": "7/7/2020 5:30 PM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "Pakistan",
+        "mn": "1",
+        "vn": "The Village, Dublin",
+        "dt": "7/12/2020 1:00 PM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "Pakistan",
+        "mn": "2",
+        "vn": "The Village, Dublin",
+        "dt": "7/14/2020 1:00 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Pakistan",
+        "mn": "1",
+        "vn": "Headingley, Leeds",
+        "dt": "8/29/2020 5:30 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Pakistan",
+        "mn": "2",
+        "vn": "Cardiff Wales Stadium, Cardiff",
+        "dt": "8/31/2020 1:30 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Pakistan",
+        "mn": "3",
+        "vn": "The Ageas Bowl, Southampton",
+        "dt": "9/2/2020 5:30 PM UTC"
+    }
+]

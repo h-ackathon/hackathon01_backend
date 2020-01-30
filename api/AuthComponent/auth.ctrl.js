@@ -21,7 +21,7 @@ exports.login = async (req, res, next) => {
         };
     }
     catch (err) {
-        failure500(res, err);
+        failure500(res);
     };
 };
 

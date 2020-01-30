@@ -10,7 +10,7 @@ class Stats extends PureComponent {
 
     componentDidMount() {
         this.props.fetchAllLeagues();
-    };
+    }
 
     render() {
 

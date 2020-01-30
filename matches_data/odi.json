@@ -1,0 +1,240 @@
+[
+    {
+        "t1": "India",
+        "t2": "Australia",
+        "mn": "1",
+        "vn": "Wankhede Stadium, Mumbai",
+        "dt": "1/14/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "India",
+        "t2": "Australia",
+        "mn": "2",
+        "vn": "Saurashtra Cricket Association Stadium, Rajkot",
+        "dt": "1/17/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "India",
+        "t2": "Australia",
+        "mn": "3",
+        "vn": "M.Chinnaswamy Stadium, Bangalore",
+        "dt": "1/19/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "1",
+        "vn": "Newlands, Cape Town",
+        "dt": "2/4/2020 11:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "1",
+        "vn": "Seddon Park, Hamilton",
+        "dt": "2/5/2020 2:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "2",
+        "vn": "Kingsmead, Durban",
+        "dt": "2/7/2020 11:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "2",
+        "vn": "Eden Park, Auckland",
+        "dt": "2/8/2020 2:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "mn": "3",
+        "vn": "New Wanderers Stadium, Johannesburg",
+        "dt": "2/9/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "India",
+        "mn": "3",
+        "vn": "Bay Oval, Tauranga",
+        "dt": "2/11/2020 2:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "Australia",
+        "mn": "1",
+        "vn": "Boland Park, Paarl",
+        "dt": "2/29/2020 11:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "Australia",
+        "mn": "2",
+        "vn": "Mangaung Oval, Bloemfontein",
+        "dt": "3/4/2020 11:00 AM UTC"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "Australia",
+        "mn": "3",
+        "vn": "JB Marks Oval, Potchefstroom",
+        "dt": "3/7/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "India",
+        "t2": "South Africa",
+        "mn": "1",
+        "vn": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+        "dt": "3/12/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "Australia",
+        "t2": "New Zealand",
+        "mn": "1",
+        "vn": "SCG, Sydney",
+        "dt": "3/13/2020 3:30 AM UTC"
+    },
+    {
+        "t1": "Australia",
+        "t2": "New Zealand",
+        "mn": "2",
+        "vn": "SCG, Sydney",
+        "dt": "3/14/2020 11:30 PM UTC"
+    },
+    {
+        "t1": "India",
+        "t2": "South Africa",
+        "mn": "2",
+        "vn": "Ekana International Cricket Stadium, Lucknow",
+        "dt": "3/15/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "India",
+        "t2": "South Africa",
+        "mn": "3",
+        "vn": "Eden Gardens, Kolkata",
+        "dt": "3/18/2020 8:00 AM UTC"
+    },
+    {
+        "t1": "Australia",
+        "t2": "New Zealand",
+        "mn": "3",
+        "vn": "Blundstone Arena, Hobart",
+        "dt": "3/20/2020 3:30 AM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "Bangladesh",
+        "mn": "1",
+        "vn": "Civil Service Cricket Club, Belfast",
+        "dt": "5/14/2020 9:45 AM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "Bangladesh",
+        "mn": "2",
+        "vn": "Civil Service Cricket Club, Belfast",
+        "dt": "5/16/2020 9:45 AM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "Bangladesh",
+        "mn": "3",
+        "vn": "Civil Service Cricket Club, Belfast",
+        "dt": "5/19/2020 9:45 AM UTC"
+    },
+    {
+        "t1": "Scotland",
+        "t2": "New Zealand",
+        "mn": "Only",
+        "vn": "The Grange, Edinburgh",
+        "dt": "6/12/2020 10:00 AM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "New Zealand",
+        "mn": "1",
+        "vn": "Civil Service Cricket Club, Belfast",
+        "dt": "6/27/2020 9:45 AM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "New Zealand",
+        "mn": "2",
+        "vn": "Civil Service Cricket Club, Belfast",
+        "dt": "6/30/2020 9:45 AM UTC"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "New Zealand",
+        "mn": "3",
+        "vn": "Civil Service Cricket Club, Belfast",
+        "dt": "7/2/2020 9:45 AM UTC"
+    },
+    {
+        "t1": "Netherlands",
+        "t2": "Pakistan",
+        "mn": "1",
+        "vn": "VRA Cricket Ground, Amstelveen",
+        "dt": "7/4/2020 8:30 AM UTC"
+    },
+    {
+        "t1": "Netherlands",
+        "t2": "Pakistan",
+        "mn": "2",
+        "vn": "VRA Cricket Ground, Amstelveen",
+        "dt": "7/7/2020 8:30 AM UTC"
+    },
+    {
+        "t1": "Netherlands",
+        "t2": "Pakistan",
+        "mn": "3",
+        "vn": "VRA Cricket Ground, Amstelveen",
+        "dt": "7/9/2020 8:30 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Australia",
+        "mn": "1",
+        "vn": "Lord's Cricket Ground, London",
+        "dt": "7/11/2020 12:00 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Australia",
+        "mn": "2",
+        "vn": "The Ageas Bowl Southampton",
+        "dt": "7/14/2020 12:00 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Australia",
+        "mn": "3",
+        "vn": "Bristol County Ground, Bristol",
+        "dt": "7/16/2020 12:00 PM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Ireland",
+        "mn": "1",
+        "vn": "Trent Bridge, Nottingham",
+        "dt": "9/10/2020 11:30 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Ireland",
+        "mn": "2",
+        "vn": "Edgbaston, Birmingham",
+        "dt": "9/12/2020 11:30 AM UTC"
+    },
+    {
+        "t1": "England",
+        "t2": "Ireland",
+        "mn": "3",
+        "vn": "The Oval, London",
+        "dt": "9/15/2020 11:30 AM UTC"
+    }
+]

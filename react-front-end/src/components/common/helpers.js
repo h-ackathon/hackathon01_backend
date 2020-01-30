@@ -4,14 +4,13 @@ import {
     BrowserRouter as Link
 } from "react-router-dom";
 
-export function Header() {
+export const Header = () => {
     return (
         <nav>
             <ul>{
-                HeaderArray.map(function (h) {
-                    return <li>
-                        <Link to={h.link}>{h.title}</Link></li>
-                })
+                HeaderArray.map( h =>
+                    <li><Link to={h.link}>{h.title}</Link></li>
+                )
             }</ul>
         </nav>
     );

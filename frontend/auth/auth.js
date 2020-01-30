@@ -2,7 +2,7 @@ const { login, loginPost, logout, register, registerPost, loginComplete } = requ
 
 module.exports = (router) => {
     
-    router.get('/login', login);
+    router.get('/login-or-register/:redr', login);
     router.get('/logout', logout);
     router.get('/sign-up', register);
 

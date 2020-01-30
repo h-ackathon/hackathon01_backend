@@ -1,11 +1,10 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const mongoose = require('mongoose')
+const {Schema} = mongoose
 
-const TeamSchema = new Schema({
-    name: String,
-    flag_path: String,
-    key: String,
-    league: {type: String, ref: 'leagues'}
-});
+const ts = new Schema({
+    n: {type: String, required: [true, 'Team name is required']},
+    i: String,
+    l: {type: Schema.Types.ObjectId, ref: 'leagues'}
+})
 
-module.exports = mongoose.model('teams', TeamSchema);
+module.exports = mongoose.model('teams', ts)
